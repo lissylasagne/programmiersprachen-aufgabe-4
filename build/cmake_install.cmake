@@ -1,4 +1,4 @@
-# Install script for directory: /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3
+# Install script for directory: /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -29,8 +29,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/external/glfw-3.2.1/cmake_install.cmake")
-  include("/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/source/cmake_install.cmake")
+  include("/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/source/cmake_install.cmake")
 
 endif()
 
@@ -42,5 +41,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

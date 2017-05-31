@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.8.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3
+CMAKE_SOURCE_DIR = /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build
+CMAKE_BINARY_DIR = /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/source/CMakeFiles/progress.marks
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/source/CMakeFiles/progress.marks
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,486 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe12.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe12.dir/rule
-.PHONY : source/CMakeFiles/aufgabe12.dir/rule
+source/CMakeFiles/aufgabe1.dir/rule:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1.dir/rule
+.PHONY : source/CMakeFiles/aufgabe1.dir/rule
 
 # Convenience name for target.
-aufgabe12: source/CMakeFiles/aufgabe12.dir/rule
+aufgabe1: source/CMakeFiles/aufgabe1.dir/rule
 
-.PHONY : aufgabe12
+.PHONY : aufgabe1
 
 # fast build rule for target.
-aufgabe12/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/build
-.PHONY : aufgabe12/fast
+aufgabe1/fast:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
+.PHONY : aufgabe1/fast
 
-# Convenience name for target.
-source/CMakeFiles/aufgabe10.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe10.dir/rule
-.PHONY : source/CMakeFiles/aufgabe10.dir/rule
+aufgabe1.o: aufgabe1.cpp.o
 
-# Convenience name for target.
-aufgabe10: source/CMakeFiles/aufgabe10.dir/rule
-
-.PHONY : aufgabe10
-
-# fast build rule for target.
-aufgabe10/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/build
-.PHONY : aufgabe10/fast
-
-# Convenience name for target.
-source/CMakeFiles/aufgabe9.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe9.dir/rule
-.PHONY : source/CMakeFiles/aufgabe9.dir/rule
-
-# Convenience name for target.
-aufgabe9: source/CMakeFiles/aufgabe9.dir/rule
-
-.PHONY : aufgabe9
-
-# fast build rule for target.
-aufgabe9/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/build
-.PHONY : aufgabe9/fast
-
-# Convenience name for target.
-source/CMakeFiles/beispiel.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/beispiel.dir/rule
-.PHONY : source/CMakeFiles/beispiel.dir/rule
-
-# Convenience name for target.
-beispiel: source/CMakeFiles/beispiel.dir/rule
-
-.PHONY : beispiel
-
-# fast build rule for target.
-beispiel/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/build
-.PHONY : beispiel/fast
-
-# Convenience name for target.
-source/CMakeFiles/aufgabe8.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe8.dir/rule
-.PHONY : source/CMakeFiles/aufgabe8.dir/rule
-
-# Convenience name for target.
-aufgabe8: source/CMakeFiles/aufgabe8.dir/rule
-
-.PHONY : aufgabe8
-
-# fast build rule for target.
-aufgabe8/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/build
-.PHONY : aufgabe8/fast
-
-# Convenience name for target.
-source/CMakeFiles/aufgabe5.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe5.dir/rule
-.PHONY : source/CMakeFiles/aufgabe5.dir/rule
-
-# Convenience name for target.
-aufgabe5: source/CMakeFiles/aufgabe5.dir/rule
-
-.PHONY : aufgabe5
-
-# fast build rule for target.
-aufgabe5/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
-.PHONY : aufgabe5/fast
-
-# Convenience name for target.
-source/CMakeFiles/aufgabe2bis4.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe2bis4.dir/rule
-.PHONY : source/CMakeFiles/aufgabe2bis4.dir/rule
-
-# Convenience name for target.
-aufgabe2bis4: source/CMakeFiles/aufgabe2bis4.dir/rule
-
-.PHONY : aufgabe2bis4
-
-# fast build rule for target.
-aufgabe2bis4/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/build
-.PHONY : aufgabe2bis4/fast
-
-# Convenience name for target.
-source/CMakeFiles/aufgabe7.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe7.dir/rule
-.PHONY : source/CMakeFiles/aufgabe7.dir/rule
-
-# Convenience name for target.
-aufgabe7: source/CMakeFiles/aufgabe7.dir/rule
-
-.PHONY : aufgabe7
-
-# fast build rule for target.
-aufgabe7/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/build
-.PHONY : aufgabe7/fast
-
-aufgabe10.o: aufgabe10.cpp.o
-
-.PHONY : aufgabe10.o
+.PHONY : aufgabe1.o
 
 # target to build an object file
-aufgabe10.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/aufgabe10.cpp.o
-.PHONY : aufgabe10.cpp.o
+aufgabe1.cpp.o:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.o
+.PHONY : aufgabe1.cpp.o
 
-aufgabe10.i: aufgabe10.cpp.i
+aufgabe1.i: aufgabe1.cpp.i
 
-.PHONY : aufgabe10.i
-
-# target to preprocess a source file
-aufgabe10.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/aufgabe10.cpp.i
-.PHONY : aufgabe10.cpp.i
-
-aufgabe10.s: aufgabe10.cpp.s
-
-.PHONY : aufgabe10.s
-
-# target to generate assembly for a file
-aufgabe10.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/aufgabe10.cpp.s
-.PHONY : aufgabe10.cpp.s
-
-aufgabe12.o: aufgabe12.cpp.o
-
-.PHONY : aufgabe12.o
-
-# target to build an object file
-aufgabe12.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/aufgabe12.cpp.o
-.PHONY : aufgabe12.cpp.o
-
-aufgabe12.i: aufgabe12.cpp.i
-
-.PHONY : aufgabe12.i
+.PHONY : aufgabe1.i
 
 # target to preprocess a source file
-aufgabe12.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/aufgabe12.cpp.i
-.PHONY : aufgabe12.cpp.i
+aufgabe1.cpp.i:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.i
+.PHONY : aufgabe1.cpp.i
 
-aufgabe12.s: aufgabe12.cpp.s
+aufgabe1.s: aufgabe1.cpp.s
 
-.PHONY : aufgabe12.s
-
-# target to generate assembly for a file
-aufgabe12.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/aufgabe12.cpp.s
-.PHONY : aufgabe12.cpp.s
-
-aufgabe2bis4.o: aufgabe2bis4.cpp.o
-
-.PHONY : aufgabe2bis4.o
-
-# target to build an object file
-aufgabe2bis4.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.o
-.PHONY : aufgabe2bis4.cpp.o
-
-aufgabe2bis4.i: aufgabe2bis4.cpp.i
-
-.PHONY : aufgabe2bis4.i
-
-# target to preprocess a source file
-aufgabe2bis4.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.i
-.PHONY : aufgabe2bis4.cpp.i
-
-aufgabe2bis4.s: aufgabe2bis4.cpp.s
-
-.PHONY : aufgabe2bis4.s
+.PHONY : aufgabe1.s
 
 # target to generate assembly for a file
-aufgabe2bis4.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/aufgabe2bis4.cpp.s
-.PHONY : aufgabe2bis4.cpp.s
-
-aufgabe5.o: aufgabe5.cpp.o
-
-.PHONY : aufgabe5.o
-
-# target to build an object file
-aufgabe5.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.o
-.PHONY : aufgabe5.cpp.o
-
-aufgabe5.i: aufgabe5.cpp.i
-
-.PHONY : aufgabe5.i
-
-# target to preprocess a source file
-aufgabe5.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.i
-.PHONY : aufgabe5.cpp.i
-
-aufgabe5.s: aufgabe5.cpp.s
-
-.PHONY : aufgabe5.s
-
-# target to generate assembly for a file
-aufgabe5.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/aufgabe5.cpp.s
-.PHONY : aufgabe5.cpp.s
-
-aufgabe7.o: aufgabe7.cpp.o
-
-.PHONY : aufgabe7.o
-
-# target to build an object file
-aufgabe7.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/aufgabe7.cpp.o
-.PHONY : aufgabe7.cpp.o
-
-aufgabe7.i: aufgabe7.cpp.i
-
-.PHONY : aufgabe7.i
-
-# target to preprocess a source file
-aufgabe7.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/aufgabe7.cpp.i
-.PHONY : aufgabe7.cpp.i
-
-aufgabe7.s: aufgabe7.cpp.s
-
-.PHONY : aufgabe7.s
-
-# target to generate assembly for a file
-aufgabe7.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/aufgabe7.cpp.s
-.PHONY : aufgabe7.cpp.s
-
-aufgabe8.o: aufgabe8.cpp.o
-
-.PHONY : aufgabe8.o
-
-# target to build an object file
-aufgabe8.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/aufgabe8.cpp.o
-.PHONY : aufgabe8.cpp.o
-
-aufgabe8.i: aufgabe8.cpp.i
-
-.PHONY : aufgabe8.i
-
-# target to preprocess a source file
-aufgabe8.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/aufgabe8.cpp.i
-.PHONY : aufgabe8.cpp.i
-
-aufgabe8.s: aufgabe8.cpp.s
-
-.PHONY : aufgabe8.s
-
-# target to generate assembly for a file
-aufgabe8.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/aufgabe8.cpp.s
-.PHONY : aufgabe8.cpp.s
-
-aufgabe9.o: aufgabe9.cpp.o
-
-.PHONY : aufgabe9.o
-
-# target to build an object file
-aufgabe9.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/aufgabe9.cpp.o
-.PHONY : aufgabe9.cpp.o
-
-aufgabe9.i: aufgabe9.cpp.i
-
-.PHONY : aufgabe9.i
-
-# target to preprocess a source file
-aufgabe9.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/aufgabe9.cpp.i
-.PHONY : aufgabe9.cpp.i
-
-aufgabe9.s: aufgabe9.cpp.s
-
-.PHONY : aufgabe9.s
-
-# target to generate assembly for a file
-aufgabe9.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/aufgabe9.cpp.s
-.PHONY : aufgabe9.cpp.s
-
-beispiel.o: beispiel.cpp.o
-
-.PHONY : beispiel.o
-
-# target to build an object file
-beispiel.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/beispiel.cpp.o
-.PHONY : beispiel.cpp.o
-
-beispiel.i: beispiel.cpp.i
-
-.PHONY : beispiel.i
-
-# target to preprocess a source file
-beispiel.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/beispiel.cpp.i
-.PHONY : beispiel.cpp.i
-
-beispiel.s: beispiel.cpp.s
-
-.PHONY : beispiel.s
-
-# target to generate assembly for a file
-beispiel.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/beispiel.cpp.s
-.PHONY : beispiel.cpp.s
-
-circle.o: circle.cpp.o
-
-.PHONY : circle.o
-
-# target to build an object file
-circle.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/circle.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/circle.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/circle.cpp.o
-.PHONY : circle.cpp.o
-
-circle.i: circle.cpp.i
-
-.PHONY : circle.i
-
-# target to preprocess a source file
-circle.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/circle.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/circle.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/circle.cpp.i
-.PHONY : circle.cpp.i
-
-circle.s: circle.cpp.s
-
-.PHONY : circle.s
-
-# target to generate assembly for a file
-circle.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/circle.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/circle.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/circle.cpp.s
-.PHONY : circle.cpp.s
-
-color.o: color.cpp.o
-
-.PHONY : color.o
-
-# target to build an object file
-color.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/color.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/color.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/color.cpp.o
-.PHONY : color.cpp.o
-
-color.i: color.cpp.i
-
-.PHONY : color.i
-
-# target to preprocess a source file
-color.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/color.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/color.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/color.cpp.i
-.PHONY : color.cpp.i
-
-color.s: color.cpp.s
-
-.PHONY : color.s
-
-# target to generate assembly for a file
-color.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/color.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/color.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/color.cpp.s
-.PHONY : color.cpp.s
-
-mat2.o: mat2.cpp.o
-
-.PHONY : mat2.o
-
-# target to build an object file
-mat2.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/mat2.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/mat2.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/mat2.cpp.o
-.PHONY : mat2.cpp.o
-
-mat2.i: mat2.cpp.i
-
-.PHONY : mat2.i
-
-# target to preprocess a source file
-mat2.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/mat2.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/mat2.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/mat2.cpp.i
-.PHONY : mat2.cpp.i
-
-mat2.s: mat2.cpp.s
-
-.PHONY : mat2.s
-
-# target to generate assembly for a file
-mat2.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/mat2.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/mat2.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/mat2.cpp.s
-.PHONY : mat2.cpp.s
-
-vec2.o: vec2.cpp.o
-
-.PHONY : vec2.o
-
-# target to build an object file
-vec2.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/vec2.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/vec2.cpp.o
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/vec2.cpp.o
-.PHONY : vec2.cpp.o
-
-vec2.i: vec2.cpp.i
-
-.PHONY : vec2.i
-
-# target to preprocess a source file
-vec2.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/vec2.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/vec2.cpp.i
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/vec2.cpp.i
-.PHONY : vec2.cpp.i
-
-vec2.s: vec2.cpp.s
-
-.PHONY : vec2.s
-
-# target to generate assembly for a file
-vec2.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/vec2.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/vec2.cpp.s
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/vec2.cpp.s
-.PHONY : vec2.cpp.s
+aufgabe1.cpp.s:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.s
+.PHONY : aufgabe1.cpp.s
 
 # Help Target
 help:
@@ -586,50 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... aufgabe12"
-	@echo "... aufgabe10"
-	@echo "... aufgabe9"
-	@echo "... beispiel"
-	@echo "... aufgabe8"
-	@echo "... aufgabe5"
-	@echo "... aufgabe2bis4"
-	@echo "... aufgabe7"
-	@echo "... aufgabe10.o"
-	@echo "... aufgabe10.i"
-	@echo "... aufgabe10.s"
-	@echo "... aufgabe12.o"
-	@echo "... aufgabe12.i"
-	@echo "... aufgabe12.s"
-	@echo "... aufgabe2bis4.o"
-	@echo "... aufgabe2bis4.i"
-	@echo "... aufgabe2bis4.s"
-	@echo "... aufgabe5.o"
-	@echo "... aufgabe5.i"
-	@echo "... aufgabe5.s"
-	@echo "... aufgabe7.o"
-	@echo "... aufgabe7.i"
-	@echo "... aufgabe7.s"
-	@echo "... aufgabe8.o"
-	@echo "... aufgabe8.i"
-	@echo "... aufgabe8.s"
-	@echo "... aufgabe9.o"
-	@echo "... aufgabe9.i"
-	@echo "... aufgabe9.s"
-	@echo "... beispiel.o"
-	@echo "... beispiel.i"
-	@echo "... beispiel.s"
-	@echo "... circle.o"
-	@echo "... circle.i"
-	@echo "... circle.s"
-	@echo "... color.o"
-	@echo "... color.i"
-	@echo "... color.s"
-	@echo "... mat2.o"
-	@echo "... mat2.i"
-	@echo "... mat2.s"
-	@echo "... vec2.o"
-	@echo "... vec2.i"
-	@echo "... vec2.s"
+	@echo "... aufgabe1"
+	@echo "... aufgabe1.o"
+	@echo "... aufgabe1.i"
+	@echo "... aufgabe1.s"
 .PHONY : help
 
 
@@ -641,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

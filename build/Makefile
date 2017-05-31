@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.8.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3
+CMAKE_SOURCE_DIR = /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build
+CMAKE_BINARY_DIR = /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,161 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named nanovg
+# Target rules for targets named aufgabe1
 
 # Build rule for target.
-nanovg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 nanovg
-.PHONY : nanovg
+aufgabe1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabe1
+.PHONY : aufgabe1
 
 # fast build rule for target.
-nanovg/fast:
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/build
-.PHONY : nanovg/fast
-
-#=============================================================================
-# Target rules for targets named glfw
-
-# Build rule for target.
-glfw: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 glfw
-.PHONY : glfw
-
-# fast build rule for target.
-glfw/fast:
-	$(MAKE) -f external/glfw-3.2.1/src/CMakeFiles/glfw.dir/build.make external/glfw-3.2.1/src/CMakeFiles/glfw.dir/build
-.PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe12
-
-# Build rule for target.
-aufgabe12: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe12
-.PHONY : aufgabe12
-
-# fast build rule for target.
-aufgabe12/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/build
-.PHONY : aufgabe12/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe10
-
-# Build rule for target.
-aufgabe10: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe10
-.PHONY : aufgabe10
-
-# fast build rule for target.
-aufgabe10/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/build
-.PHONY : aufgabe10/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe9
-
-# Build rule for target.
-aufgabe9: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe9
-.PHONY : aufgabe9
-
-# fast build rule for target.
-aufgabe9/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/build
-.PHONY : aufgabe9/fast
-
-#=============================================================================
-# Target rules for targets named beispiel
-
-# Build rule for target.
-beispiel: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 beispiel
-.PHONY : beispiel
-
-# fast build rule for target.
-beispiel/fast:
-	$(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/build
-.PHONY : beispiel/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe8
-
-# Build rule for target.
-aufgabe8: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe8
-.PHONY : aufgabe8
-
-# fast build rule for target.
-aufgabe8/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/build
-.PHONY : aufgabe8/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe5
-
-# Build rule for target.
-aufgabe5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe5
-.PHONY : aufgabe5
-
-# fast build rule for target.
-aufgabe5/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
-.PHONY : aufgabe5/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe2bis4
-
-# Build rule for target.
-aufgabe2bis4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe2bis4
-.PHONY : aufgabe2bis4
-
-# fast build rule for target.
-aufgabe2bis4/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/build
-.PHONY : aufgabe2bis4/fast
-
-#=============================================================================
-# Target rules for targets named aufgabe7
-
-# Build rule for target.
-aufgabe7: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe7
-.PHONY : aufgabe7
-
-# fast build rule for target.
-aufgabe7/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/build
-.PHONY : aufgabe7/fast
-
-external/nanovg/src/nanovg.o: external/nanovg/src/nanovg.c.o
-
-.PHONY : external/nanovg/src/nanovg.o
-
-# target to build an object file
-external/nanovg/src/nanovg.c.o:
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/external/nanovg/src/nanovg.c.o
-.PHONY : external/nanovg/src/nanovg.c.o
-
-external/nanovg/src/nanovg.i: external/nanovg/src/nanovg.c.i
-
-.PHONY : external/nanovg/src/nanovg.i
-
-# target to preprocess a source file
-external/nanovg/src/nanovg.c.i:
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/external/nanovg/src/nanovg.c.i
-.PHONY : external/nanovg/src/nanovg.c.i
-
-external/nanovg/src/nanovg.s: external/nanovg/src/nanovg.c.s
-
-.PHONY : external/nanovg/src/nanovg.s
-
-# target to generate assembly for a file
-external/nanovg/src/nanovg.c.s:
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/external/nanovg/src/nanovg.c.s
-.PHONY : external/nanovg/src/nanovg.c.s
+aufgabe1/fast:
+	$(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
+.PHONY : aufgabe1/fast
 
 # Help Target
 help:
@@ -275,19 +131,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... nanovg"
-	@echo "... glfw"
-	@echo "... aufgabe12"
-	@echo "... aufgabe10"
-	@echo "... aufgabe9"
-	@echo "... beispiel"
-	@echo "... aufgabe8"
-	@echo "... aufgabe5"
-	@echo "... aufgabe2bis4"
-	@echo "... aufgabe7"
-	@echo "... external/nanovg/src/nanovg.o"
-	@echo "... external/nanovg/src/nanovg.i"
-	@echo "... external/nanovg/src/nanovg.s"
+	@echo "... aufgabe1"
 .PHONY : help
 
 

@@ -54,145 +54,21 @@ RM = /usr/local/Cellar/cmake/3.8.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3
+CMAKE_SOURCE_DIR = /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build
-
-#=============================================================================
-# Target rules for target CMakeFiles/nanovg.dir
-
-# All Build rule for target.
-CMakeFiles/nanovg.dir/all:
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/depend
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=43,44 "Built target nanovg"
-.PHONY : CMakeFiles/nanovg.dir/all
-
-# Include target in all.
-all: CMakeFiles/nanovg.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/nanovg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/nanovg.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : CMakeFiles/nanovg.dir/rule
-
-# Convenience name for target.
-nanovg: CMakeFiles/nanovg.dir/rule
-
-.PHONY : nanovg
-
-# clean rule for target.
-CMakeFiles/nanovg.dir/clean:
-	$(MAKE) -f CMakeFiles/nanovg.dir/build.make CMakeFiles/nanovg.dir/clean
-.PHONY : CMakeFiles/nanovg.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/nanovg.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory external/glfw-3.2.1
-
-# Convenience name for "all" pass in the directory.
-external/glfw-3.2.1/all: external/glfw-3.2.1/src/all
-
-.PHONY : external/glfw-3.2.1/all
-
-# Convenience name for "clean" pass in the directory.
-external/glfw-3.2.1/clean: external/glfw-3.2.1/src/clean
-
-.PHONY : external/glfw-3.2.1/clean
-
-# Convenience name for "preinstall" pass in the directory.
-external/glfw-3.2.1/preinstall: external/glfw-3.2.1/src/preinstall
-
-.PHONY : external/glfw-3.2.1/preinstall
-
-#=============================================================================
-# Directory level rules for directory external/glfw-3.2.1/src
-
-# Convenience name for "all" pass in the directory.
-external/glfw-3.2.1/src/all: external/glfw-3.2.1/src/CMakeFiles/glfw.dir/all
-
-.PHONY : external/glfw-3.2.1/src/all
-
-# Convenience name for "clean" pass in the directory.
-external/glfw-3.2.1/src/clean: external/glfw-3.2.1/src/CMakeFiles/glfw.dir/clean
-
-.PHONY : external/glfw-3.2.1/src/clean
-
-# Convenience name for "preinstall" pass in the directory.
-external/glfw-3.2.1/src/preinstall:
-
-.PHONY : external/glfw-3.2.1/src/preinstall
-
-#=============================================================================
-# Target rules for target external/glfw-3.2.1/src/CMakeFiles/glfw.dir
-
-# All Build rule for target.
-external/glfw-3.2.1/src/CMakeFiles/glfw.dir/all:
-	$(MAKE) -f external/glfw-3.2.1/src/CMakeFiles/glfw.dir/build.make external/glfw-3.2.1/src/CMakeFiles/glfw.dir/depend
-	$(MAKE) -f external/glfw-3.2.1/src/CMakeFiles/glfw.dir/build.make external/glfw-3.2.1/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=29,30,31,32,33,34,35,36,37,38,39,40,41,42 "Built target glfw"
-.PHONY : external/glfw-3.2.1/src/CMakeFiles/glfw.dir/all
-
-# Include target in all.
-all: external/glfw-3.2.1/src/CMakeFiles/glfw.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-external/glfw-3.2.1/src/CMakeFiles/glfw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 14
-	$(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.2.1/src/CMakeFiles/glfw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : external/glfw-3.2.1/src/CMakeFiles/glfw.dir/rule
-
-# Convenience name for target.
-glfw: external/glfw-3.2.1/src/CMakeFiles/glfw.dir/rule
-
-.PHONY : glfw
-
-# clean rule for target.
-external/glfw-3.2.1/src/CMakeFiles/glfw.dir/clean:
-	$(MAKE) -f external/glfw-3.2.1/src/CMakeFiles/glfw.dir/build.make external/glfw-3.2.1/src/CMakeFiles/glfw.dir/clean
-.PHONY : external/glfw-3.2.1/src/CMakeFiles/glfw.dir/clean
-
-# clean rule for target.
-clean: external/glfw-3.2.1/src/CMakeFiles/glfw.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build
 
 #=============================================================================
 # Directory level rules for directory source
 
 # Convenience name for "all" pass in the directory.
-source/all: source/CMakeFiles/aufgabe12.dir/all
-source/all: source/CMakeFiles/aufgabe10.dir/all
-source/all: source/CMakeFiles/aufgabe9.dir/all
-source/all: source/CMakeFiles/beispiel.dir/all
-source/all: source/CMakeFiles/aufgabe8.dir/all
-source/all: source/CMakeFiles/aufgabe5.dir/all
-source/all: source/CMakeFiles/aufgabe2bis4.dir/all
-source/all: source/CMakeFiles/aufgabe7.dir/all
+source/all: source/CMakeFiles/aufgabe1.dir/all
 
 .PHONY : source/all
 
 # Convenience name for "clean" pass in the directory.
-source/clean: source/CMakeFiles/aufgabe12.dir/clean
-source/clean: source/CMakeFiles/aufgabe10.dir/clean
-source/clean: source/CMakeFiles/aufgabe9.dir/clean
-source/clean: source/CMakeFiles/beispiel.dir/clean
-source/clean: source/CMakeFiles/aufgabe8.dir/clean
-source/clean: source/CMakeFiles/aufgabe5.dir/clean
-source/clean: source/CMakeFiles/aufgabe2bis4.dir/clean
-source/clean: source/CMakeFiles/aufgabe7.dir/clean
+source/clean: source/CMakeFiles/aufgabe1.dir/clean
 
 .PHONY : source/clean
 
@@ -202,298 +78,39 @@ source/preinstall:
 .PHONY : source/preinstall
 
 #=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe12.dir
+# Target rules for target source/CMakeFiles/aufgabe1.dir
 
 # All Build rule for target.
-source/CMakeFiles/aufgabe12.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=3,4,5,6,7,8 "Built target aufgabe12"
-.PHONY : source/CMakeFiles/aufgabe12.dir/all
+source/CMakeFiles/aufgabe1.dir/all:
+	$(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/depend
+	$(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles --progress-num=1,2 "Built target aufgabe1"
+.PHONY : source/CMakeFiles/aufgabe1.dir/all
 
 # Include target in all.
-all: source/CMakeFiles/aufgabe12.dir/all
+all: source/CMakeFiles/aufgabe1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe12.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe12.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe12.dir/rule
+source/CMakeFiles/aufgabe1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles 0
+.PHONY : source/CMakeFiles/aufgabe1.dir/rule
 
 # Convenience name for target.
-aufgabe12: source/CMakeFiles/aufgabe12.dir/rule
+aufgabe1: source/CMakeFiles/aufgabe1.dir/rule
 
-.PHONY : aufgabe12
-
-# clean rule for target.
-source/CMakeFiles/aufgabe12.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe12.dir/build.make source/CMakeFiles/aufgabe12.dir/clean
-.PHONY : source/CMakeFiles/aufgabe12.dir/clean
+.PHONY : aufgabe1
 
 # clean rule for target.
-clean: source/CMakeFiles/aufgabe12.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe10.dir
-
-# All Build rule for target.
-source/CMakeFiles/aufgabe10.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=1,2 "Built target aufgabe10"
-.PHONY : source/CMakeFiles/aufgabe10.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/aufgabe10.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe10.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe10.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe10.dir/rule
-
-# Convenience name for target.
-aufgabe10: source/CMakeFiles/aufgabe10.dir/rule
-
-.PHONY : aufgabe10
+source/CMakeFiles/aufgabe1.dir/clean:
+	$(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/clean
+.PHONY : source/CMakeFiles/aufgabe1.dir/clean
 
 # clean rule for target.
-source/CMakeFiles/aufgabe10.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe10.dir/build.make source/CMakeFiles/aufgabe10.dir/clean
-.PHONY : source/CMakeFiles/aufgabe10.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/aufgabe10.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe9.dir
-
-# All Build rule for target.
-source/CMakeFiles/aufgabe9.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=25,26 "Built target aufgabe9"
-.PHONY : source/CMakeFiles/aufgabe9.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/aufgabe9.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe9.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe9.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe9.dir/rule
-
-# Convenience name for target.
-aufgabe9: source/CMakeFiles/aufgabe9.dir/rule
-
-.PHONY : aufgabe9
-
-# clean rule for target.
-source/CMakeFiles/aufgabe9.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe9.dir/build.make source/CMakeFiles/aufgabe9.dir/clean
-.PHONY : source/CMakeFiles/aufgabe9.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/aufgabe9.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/beispiel.dir
-
-# All Build rule for target.
-source/CMakeFiles/beispiel.dir/all:
-	$(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/depend
-	$(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=27,28 "Built target beispiel"
-.PHONY : source/CMakeFiles/beispiel.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/beispiel.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/beispiel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/beispiel.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/beispiel.dir/rule
-
-# Convenience name for target.
-beispiel: source/CMakeFiles/beispiel.dir/rule
-
-.PHONY : beispiel
-
-# clean rule for target.
-source/CMakeFiles/beispiel.dir/clean:
-	$(MAKE) -f source/CMakeFiles/beispiel.dir/build.make source/CMakeFiles/beispiel.dir/clean
-.PHONY : source/CMakeFiles/beispiel.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/beispiel.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe8.dir
-
-# All Build rule for target.
-source/CMakeFiles/aufgabe8.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=19,20,21,22,23,24 "Built target aufgabe8"
-.PHONY : source/CMakeFiles/aufgabe8.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/aufgabe8.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe8.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe8.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe8.dir/rule
-
-# Convenience name for target.
-aufgabe8: source/CMakeFiles/aufgabe8.dir/rule
-
-.PHONY : aufgabe8
-
-# clean rule for target.
-source/CMakeFiles/aufgabe8.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe8.dir/build.make source/CMakeFiles/aufgabe8.dir/clean
-.PHONY : source/CMakeFiles/aufgabe8.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/aufgabe8.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe5.dir
-
-# All Build rule for target.
-source/CMakeFiles/aufgabe5.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=11,12 "Built target aufgabe5"
-.PHONY : source/CMakeFiles/aufgabe5.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/aufgabe5.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe5.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe5.dir/rule
-
-# Convenience name for target.
-aufgabe5: source/CMakeFiles/aufgabe5.dir/rule
-
-.PHONY : aufgabe5
-
-# clean rule for target.
-source/CMakeFiles/aufgabe5.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe5.dir/build.make source/CMakeFiles/aufgabe5.dir/clean
-.PHONY : source/CMakeFiles/aufgabe5.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/aufgabe5.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe2bis4.dir
-
-# All Build rule for target.
-source/CMakeFiles/aufgabe2bis4.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=9,10 "Built target aufgabe2bis4"
-.PHONY : source/CMakeFiles/aufgabe2bis4.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/aufgabe2bis4.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe2bis4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe2bis4.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe2bis4.dir/rule
-
-# Convenience name for target.
-aufgabe2bis4: source/CMakeFiles/aufgabe2bis4.dir/rule
-
-.PHONY : aufgabe2bis4
-
-# clean rule for target.
-source/CMakeFiles/aufgabe2bis4.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe2bis4.dir/build.make source/CMakeFiles/aufgabe2bis4.dir/clean
-.PHONY : source/CMakeFiles/aufgabe2bis4.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/aufgabe2bis4.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target source/CMakeFiles/aufgabe7.dir
-
-# All Build rule for target.
-source/CMakeFiles/aufgabe7.dir/all:
-	$(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/depend
-	$(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles --progress-num=13,14,15,16,17,18 "Built target aufgabe7"
-.PHONY : source/CMakeFiles/aufgabe7.dir/all
-
-# Include target in all.
-all: source/CMakeFiles/aufgabe7.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-source/CMakeFiles/aufgabe7.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe7.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/lissyscholz/documents/programmiersprachen/auf3/programmiersprachen-aufgabe-3/build/CMakeFiles 0
-.PHONY : source/CMakeFiles/aufgabe7.dir/rule
-
-# Convenience name for target.
-aufgabe7: source/CMakeFiles/aufgabe7.dir/rule
-
-.PHONY : aufgabe7
-
-# clean rule for target.
-source/CMakeFiles/aufgabe7.dir/clean:
-	$(MAKE) -f source/CMakeFiles/aufgabe7.dir/build.make source/CMakeFiles/aufgabe7.dir/clean
-.PHONY : source/CMakeFiles/aufgabe7.dir/clean
-
-# clean rule for target.
-clean: source/CMakeFiles/aufgabe7.dir/clean
+clean: source/CMakeFiles/aufgabe1.dir/clean
 
 .PHONY : clean
 
