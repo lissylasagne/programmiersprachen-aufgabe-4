@@ -6,8 +6,57 @@ TEST_CASE("test lists", "[list]")
 {
 	SECTION ("test default constructor, empty and size")
 	{
-		List listA();
-		REQUIRE (listA.size() == 0);
-		REQUIRE (listA.empty() == true);
+		List<char> list;
+		REQUIRE(list.size() == 0);
+		REQUIRE(list.empty() == true);
 	}
+
+	SECTION ("push, pop, front and back")
+	{
+		List<int>list;
+		list.push_front(42);
+		REQUIRE(list.front() == 42);
+
+		list.pop_back();
+		REQUIRE(list.empty() == true);
+		list.push_front(1);
+		list.push_front(2);
+		REQUIRE(list.front() == 2);
+		REQUIRE(list.back() == 1);
+		list.pop_front();
+		list.push_back(3);
+		REQUIRE(list.front() == 1);
+		REQUIRE(list.back() == 3);
+	}
+
+	SECTION("should be empty after clearing")
+	{
+	List<int> list ;
+	list.push_front(1);
+	list.push_front(2);
+	list.push_front(3);
+	list.push_front(4);
+	list.clear();
+	REQUIRE(list.empty());
+	}
+
+	SECTION("should be an empty range after default construction")
+	{
+		List<int> list ;
+		auto b = list.begin();
+		auto e = list.end();
+		REQUIRE(b == e);
+	}
+	SECTION("provide acces to the first element with begin")
+	{
+		List<int > list ;
+		list.push_front(42);
+		REQUIRE(42 == *list.begin());
+	}
+}
+
+
+int main(int argc, char *argv[])
+{
+  return Catch::Session().run(argc, argv);
 }

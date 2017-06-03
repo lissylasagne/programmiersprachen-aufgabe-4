@@ -2,4 +2,4 @@
 /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/CMakeFiles/edit_cache.dir
 /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/source/CMakeFiles/rebuild_cache.dir
 /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/source/CMakeFiles/edit_cache.dir
-/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/source/CMakeFiles/aufgabe1.dir
+/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build/source/CMakeFiles/testlist.dir

@@ -111,46 +111,73 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/aufgabe1.dir/rule:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe1.dir/rule
-.PHONY : source/CMakeFiles/aufgabe1.dir/rule
+source/CMakeFiles/testlist.dir/rule:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/testlist.dir/rule
+.PHONY : source/CMakeFiles/testlist.dir/rule
 
 # Convenience name for target.
-aufgabe1: source/CMakeFiles/aufgabe1.dir/rule
+testlist: source/CMakeFiles/testlist.dir/rule
 
-.PHONY : aufgabe1
+.PHONY : testlist
 
 # fast build rule for target.
-aufgabe1/fast:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/build
-.PHONY : aufgabe1/fast
+testlist/fast:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/build
+.PHONY : testlist/fast
 
-aufgabe1.o: aufgabe1.cpp.o
+list.o: list.cpp.o
 
-.PHONY : aufgabe1.o
+.PHONY : list.o
 
 # target to build an object file
-aufgabe1.cpp.o:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.o
-.PHONY : aufgabe1.cpp.o
+list.cpp.o:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/list.cpp.o
+.PHONY : list.cpp.o
 
-aufgabe1.i: aufgabe1.cpp.i
+list.i: list.cpp.i
 
-.PHONY : aufgabe1.i
+.PHONY : list.i
 
 # target to preprocess a source file
-aufgabe1.cpp.i:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.i
-.PHONY : aufgabe1.cpp.i
+list.cpp.i:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/list.cpp.i
+.PHONY : list.cpp.i
 
-aufgabe1.s: aufgabe1.cpp.s
+list.s: list.cpp.s
 
-.PHONY : aufgabe1.s
+.PHONY : list.s
 
 # target to generate assembly for a file
-aufgabe1.cpp.s:
-	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe1.dir/build.make source/CMakeFiles/aufgabe1.dir/aufgabe1.cpp.s
-.PHONY : aufgabe1.cpp.s
+list.cpp.s:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/list.cpp.s
+.PHONY : list.cpp.s
+
+testlist.o: testlist.cpp.o
+
+.PHONY : testlist.o
+
+# target to build an object file
+testlist.cpp.o:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/testlist.cpp.o
+.PHONY : testlist.cpp.o
+
+testlist.i: testlist.cpp.i
+
+.PHONY : testlist.i
+
+# target to preprocess a source file
+testlist.cpp.i:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/testlist.cpp.i
+.PHONY : testlist.cpp.i
+
+testlist.s: testlist.cpp.s
+
+.PHONY : testlist.s
+
+# target to generate assembly for a file
+testlist.cpp.s:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/testlist.cpp.s
+.PHONY : testlist.cpp.s
 
 # Help Target
 help:
@@ -160,10 +187,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... aufgabe1"
-	@echo "... aufgabe1.o"
-	@echo "... aufgabe1.i"
-	@echo "... aufgabe1.s"
+	@echo "... testlist"
+	@echo "... list.o"
+	@echo "... list.i"
+	@echo "... list.s"
+	@echo "... testlist.o"
+	@echo "... testlist.i"
+	@echo "... testlist.s"
 .PHONY : help
 
 
