@@ -42,16 +42,47 @@ TEST_CASE("test lists", "[list]")
 
 	SECTION("should be an empty range after default construction")
 	{
-		List<int> list ;
+		List<int> list;
 		auto b = list.begin();
 		auto e = list.end();
 		REQUIRE(b == e);
 	}
+	
 	SECTION("provide acces to the first element with begin")
 	{
 		List<int > list ;
 		list.push_front(42);
 		REQUIRE(42 == *list.begin());
+		list.push_front(38);
+		REQUIRE(38 == *list.begin());
+		list.pop_front();
+		REQUIRE(42 == *list.begin());
+
+	}
+
+	SECTION("copy constructor")
+	{
+		List<int> list ;
+		list.push_front(1);
+		list.push_front(2);
+		list.push_front(3);
+		list.push_front(4);
+		List<int> list2 {list};
+		REQUIRE(list == list2);
+	}
+
+	SECTION("insert")
+	{
+		List<int> list ;
+		list.push_front(1);
+		list.push_front(1);
+		list.push_front(1);
+		list.push_front(1);
+		list.insert(list.begin(), 2);
+		list.insert(++list.begin(), 3);
+		REQUIRE(*(list.begin()) == 2);
+		list.pop_front();
+		REQUIRE(*(list.begin()) == 3);	
 	}
 }
 

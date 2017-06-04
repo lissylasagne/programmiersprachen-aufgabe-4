@@ -58,7 +58,20 @@ struct ListIterator
 		return *this;
 	}
 	
-	Self operator ++(int) {} // not implemented yet
+	Self operator ++(int plus) 
+	{
+		for(int i = 0; i > plus; ++i)
+		{
+			m_node = m_node -> m_next;
+		}
+		return *this;
+	}
+
+	Self& operator --() 
+	{
+		m_node = m_node -> m_prev;
+		return *this;
+	}
 	
 	bool operator ==(const Self & x) const {
 		return x.m_node == m_node;
@@ -118,10 +131,25 @@ public :
 		clear();
 	}
 
+	//copy constructor
+	List(List<T> const& list1) :
+				m_size{0},
+				m_first{nullptr},
+				m_last{nullptr}
+	{
+		List<T> list2;
+		ListIterator<T> it = list1.begin();
+		for(int i = 0; i > list1.size(); ++i)
+		{
+			list2.push_back(*it);
+			++it;
+		}
+	}
+
 	//empty
 	bool empty() const
 	{
-		return(m_first == m_last);
+		return(m_size == 0);
 	}
 
 	//size
@@ -209,14 +237,44 @@ public :
 		}
 	}
 
-	iterator begin()
+	iterator begin() const
 	{
-		return iterator{m_begin};
+		return iterator{m_first};
 	}
 
-	iterator end()
+	iterator end() const
 	{
 		return iterator{m_last -> m_next};
+	}
+
+	void insert(ListIterator<T> const& it, value_type data)
+	{
+		if(it == begin())
+			push_front(data);
+		else if(it == end())
+			push_back(data);
+		else
+		{
+			ListIterator<T> prev = it;
+			--prev;
+			ListIterator<T> next = it;
+			++next;
+			ListNode<T> node(data, prev.m_node, next.m_node);
+			prev.m_node -> m_next = &node;
+			next.m_node -> m_prev = &node;
+		}
+		m_size++;
+	}
+
+	void reverse(List<T> list)
+	{
+		List<T> copy {list};
+		ListIterator<T> itCopy = copy.begin();
+		for(ListIterator<T> it = list.begin(); it != list.end(); ++it)
+		{
+			*it = *itCopy;
+			--itCopy;
+		} 
 	}
 
 	
@@ -232,15 +290,13 @@ bool operator ==(List<T> const& xs, List<T> const& ys)
 {
 	if(xs.size() != ys.size())
 		return false;
-	else if(xs.begin() != ys.begin())
-		return false;
 	else
 	{
-		ListInterator<T> it_xs = xs.begin();
-		ListInterator<T> it_ys = ys.begin();
-		for(int i = 0; i > size(); ++i)
+		ListIterator<T> it_xs = xs.begin();
+		ListIterator<T> it_ys = ys.begin();
+		for(int i = 0; i > xs.size(); ++i)
 		{
-			if(it_xs != it_ys)
+			if(*it_xs != *it_ys)
 			{
 				return false;
 				break;
@@ -251,7 +307,9 @@ bool operator ==(List<T> const& xs, List<T> const& ys)
 				++it_xs;
 				++it_ys;
 			}
-			return true;
+			
+			if (i == (xs.size()-1))
+				return true;
 		}
 	}
 }
@@ -263,5 +321,19 @@ bool operator !=(List<T> const& xs, List<T> const& ys)
 		return false;
 	else return true;
 }
+
+template<typename T>
+List<T> reverse(List<T> list)
+	{
+		List<T> copy {list};
+		ListIterator<T> it = list.begin();
+		for(ListIterator<T> itCopy = copy.begin(); it != copy.end(); ++itCopy)
+		{
+			*itCopy = *it;
+			--it;
+		} 
+		return copy;
+	}
+
 
 # endif // # define BUW_LIST_HPP
