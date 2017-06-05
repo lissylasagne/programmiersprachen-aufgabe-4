@@ -259,18 +259,18 @@ public :
 			--prev;
 			ListIterator<T> next = it;
 			++next;
-			ListNode<T> node(data, prev.m_node, next.m_node);
-			prev.m_node -> m_next = &node;
-			next.m_node -> m_prev = &node;
+			ListNode<T> node(data, prev.m_node, it.m_node);
+			prev.m_node -> m_next =& node;
+			next.m_node -> m_prev =& node;
+			m_size++;
 		}
-		m_size++;
 	}
 
-	void reverse(List<T> list)
+	void reverse()
 	{
-		List<T> copy {list};
+		List<T> copy {*this};
 		ListIterator<T> itCopy = copy.begin();
-		for(ListIterator<T> it = list.begin(); it != list.end(); ++it)
+		for(ListIterator<T> it = begin(); it != end(); ++it)
 		{
 			*it = *itCopy;
 			--itCopy;
@@ -294,22 +294,33 @@ bool operator ==(List<T> const& xs, List<T> const& ys)
 	{
 		ListIterator<T> it_xs = xs.begin();
 		ListIterator<T> it_ys = ys.begin();
-		for(int i = 0; i > xs.size(); ++i)
+		/*while(it_xs != xs.end())
 		{
 			if(*it_xs != *it_ys)
 			{
 				return false;
 				break;
 			}
-
 			else
 			{
 				++it_xs;
 				++it_ys;
 			}
-			
-			if (i == (xs.size()-1))
-				return true;
+		}*/
+
+
+		for(ListIterator<T> it_xs = xs.begin(); it_xs != xs.end(); ++it_xs)
+		{
+			if(*it_xs == *it_ys)
+			{
+				if(++it_xs == xs.end())
+				{
+					return true;
+				}
+				else ++it_ys;
+			}
+
+			else return false;
 		}
 	}
 }
