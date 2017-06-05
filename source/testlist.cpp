@@ -1,5 +1,7 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
+#include <vector>
+#include <algorithm>
 #include "list.cpp"
 
 TEST_CASE("test lists", "[list]")
@@ -82,11 +84,11 @@ TEST_CASE("test lists", "[list]")
 
 		List<char> list2;
 		list2.push_front('a');
-		REQUIRE(*list3.begin() == 'a');
+		REQUIRE('a' == *list.begin());
 		list2.push_front('b');
-		REQUIRE(*list3.begin() == 'b');
+		REQUIRE('b' == *list.begin());
 		list2.push_front('c');
-		REQUIRE(*list3.begin() == 'c');
+		REQUIRE('c' == *list.begin());
 
 	}
 

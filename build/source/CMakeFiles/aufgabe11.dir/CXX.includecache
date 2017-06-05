@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/source/aufgabe11.cpp
+vector
+-
+algorithm
+-
+list.cpp
+/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/source/list.cpp
+
+/Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/source/list.cpp
+cstddef
+-
+iostream
+-
+

@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe11.dir/rule:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe11.dir/rule
+.PHONY : source/CMakeFiles/aufgabe11.dir/rule
+
+# Convenience name for target.
+aufgabe11: source/CMakeFiles/aufgabe11.dir/rule
+
+.PHONY : aufgabe11
+
+# fast build rule for target.
+aufgabe11/fast:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/build
+.PHONY : aufgabe11/fast
+
+# Convenience name for target.
 source/CMakeFiles/testlist.dir/rule:
 	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/testlist.dir/rule
 .PHONY : source/CMakeFiles/testlist.dir/rule
@@ -125,12 +140,40 @@ testlist/fast:
 	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/build
 .PHONY : testlist/fast
 
+aufgabe11.o: aufgabe11.cpp.o
+
+.PHONY : aufgabe11.o
+
+# target to build an object file
+aufgabe11.cpp.o:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/aufgabe11.cpp.o
+.PHONY : aufgabe11.cpp.o
+
+aufgabe11.i: aufgabe11.cpp.i
+
+.PHONY : aufgabe11.i
+
+# target to preprocess a source file
+aufgabe11.cpp.i:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/aufgabe11.cpp.i
+.PHONY : aufgabe11.cpp.i
+
+aufgabe11.s: aufgabe11.cpp.s
+
+.PHONY : aufgabe11.s
+
+# target to generate assembly for a file
+aufgabe11.cpp.s:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/aufgabe11.cpp.s
+.PHONY : aufgabe11.cpp.s
+
 list.o: list.cpp.o
 
 .PHONY : list.o
 
 # target to build an object file
 list.cpp.o:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/list.cpp.o
 	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/list.cpp.o
 .PHONY : list.cpp.o
 
@@ -140,6 +183,7 @@ list.i: list.cpp.i
 
 # target to preprocess a source file
 list.cpp.i:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/list.cpp.i
 	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/list.cpp.i
 .PHONY : list.cpp.i
 
@@ -149,6 +193,7 @@ list.s: list.cpp.s
 
 # target to generate assembly for a file
 list.cpp.s:
+	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/aufgabe11.dir/build.make source/CMakeFiles/aufgabe11.dir/list.cpp.s
 	cd /Users/lissyscholz/documents/programmiersprachen/auf4/programmiersprachen-aufgabe-4/build && $(MAKE) -f source/CMakeFiles/testlist.dir/build.make source/CMakeFiles/testlist.dir/list.cpp.s
 .PHONY : list.cpp.s
 
@@ -187,7 +232,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... aufgabe11"
 	@echo "... testlist"
+	@echo "... aufgabe11.o"
+	@echo "... aufgabe11.i"
+	@echo "... aufgabe11.s"
 	@echo "... list.o"
 	@echo "... list.i"
 	@echo "... list.s"
