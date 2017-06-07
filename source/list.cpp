@@ -39,8 +39,8 @@ struct ListIterator
 
 	friend class List <T>;
 
-	ListIterator() : m_node {nullptr} {}
-	ListIterator(ListNode <T>* n) :m_node{n} {}
+	ListIterator(): m_node {nullptr} {}
+	ListIterator(ListNode <T>* n): m_node{n} {}
 	
 	reference operator *() const 
 	{
@@ -67,7 +67,7 @@ struct ListIterator
 		return *this;
 	}
 
-	Self& operator --() 
+	Self operator --() 
 	{
 		m_node = m_node -> m_prev;
 		return *this;
@@ -116,7 +116,7 @@ public :
 	typedef ListIterator <T> iterator ;
 	typedef ListConstIterator <T> const_iterator ;
 	
-	friend class ListIterator <T >;
+	friend class ListIterator <T>;
 	friend class ListConstIterator <T>;
 
 	//default constructor
@@ -127,24 +127,29 @@ public :
 			{}
 
 	//destructor
-	~List() {
+	~List() 
+	{
 		clear();
 	}
 
 	//copy constructor
-	List(List<T> const& list1) :
-				m_size{0},
-				m_first{nullptr},
-				m_last{nullptr}
+	List(List<T> const& list1)
 	{
-		List<T> list2;
-		ListIterator<T> it = list1.begin();
-		for(int i = 0; i > list1.size(); ++i)
+		for(auto it = list1.begin(); it != nullptr; ++it)
 		{
-			list2.push_back(*it);
-			++it;
+			push_back(*it);
 		}
 	}
+
+	//move constructor
+	List(List&& list1) :
+			m_size{list1.m_size},
+			m_first{list1.m_first},
+			m_last{list1.m_last}
+	{
+		list1.clear();
+	}
+
 
 	//empty
 	bool empty() const
@@ -239,12 +244,18 @@ public :
 
 	iterator begin() const
 	{
-		return iterator{m_first};
+		if(empty()) 
+			return iterator(nullptr);
+		else 
+			return iterator(m_first);
 	}
 
 	iterator end() const
 	{
-		return iterator{m_last -> m_next};
+		if(empty()) 
+			return iterator(nullptr);
+		else 
+			return iterator(m_last -> m_next);
 	}
 
 	void insert(ListIterator<T> const& it, value_type data)
@@ -277,8 +288,16 @@ public :
 		} 
 	}
 
+	void operator = (List<T> list)
+	{
+		m_first = list.m_fist;
+		m_last = list.m_last;
+		m_size = list.m_size;
+	}	
+
+
 	
-// not implemented yet
+
 private :
 	std :: size_t m_size = 0;
 	ListNode <T>* m_first = nullptr ;
@@ -313,11 +332,11 @@ bool operator ==(List<T> const& xs, List<T> const& ys)
 		{
 			if(*it_xs == *it_ys)
 			{
-				if(++it_xs == xs.end())
+				if(++it_xs != xs.end())
 				{
-					return true;
+					++it_ys;
 				}
-				else ++it_ys;
+				else return true;
 			}
 
 			else return false;

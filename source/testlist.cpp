@@ -84,11 +84,11 @@ TEST_CASE("test lists", "[list]")
 
 		List<char> list2;
 		list2.push_front('a');
-		REQUIRE('a' == *list.begin());
+		REQUIRE('a' == *list2.begin());
 		list2.push_front('b');
-		REQUIRE('b' == *list.begin());
+		REQUIRE('b' == *list2.begin());
 		list2.push_front('c');
-		REQUIRE('c' == *list.begin());
+		REQUIRE('c' == *list2.begin());
 
 	}
 
@@ -100,7 +100,7 @@ TEST_CASE("test lists", "[list]")
 		list.push_front(3);
 		list.push_front(4);
 		List<int> list2 {list};
-		REQUIRE(list == list2);
+		REQUIRE((list == list2));
 
 		
 		List<int> list3 ;
@@ -162,6 +162,49 @@ TEST_CASE("test lists", "[list]")
 		list3.reverse();
 		REQUIRE(list3 == list4);
 		REQUIRE(list3.front() == 415);
+	}
+
+	SECTION("assign operator")
+	{
+		List<int> list;
+		list.push_front(1);
+		list.push_front(2);
+		list.push_front(3);
+		list.push_front(4);
+
+		List<int> list2 = list;
+		REQUIRE(list == list2);
+
+		List<int> list3;
+		list3.push_front(5);
+		list3.push_front(243);
+		list3.push_front(1839);
+
+		List<int> list4 = list3;
+		REQUIRE(list3 == list4);
+
+	}
+
+	SECTION("move constructor")
+	{
+		List<int> list ;
+		list.push_front(1);
+		list.push_front(2);
+		list.push_front(3);
+		list.push_front(4);
+		List<int> list2(std::move(list));
+		REQUIRE(0 == list.size());
+		REQUIRE(list.empty());
+		REQUIRE(4 == list2.size());
+
+		List<int> list3 ;
+		list3.push_front(23);
+		list3.push_front(141);
+		list3.push_front(78);
+		List<int> list4(std::move(list));
+		REQUIRE(0 == list3.size());
+		REQUIRE(list.empty());
+		REQUIRE(3 == list4.size());
 	}
 }
 
